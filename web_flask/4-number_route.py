@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 """
-2th task file with a Flask app
+4th task file with a Flask app
 """
 from flask import Flask
+from markupsafe import escape
 
 app = Flask(__name__)
 
@@ -35,6 +36,27 @@ def cisfun(text):
         str: returns 'C <text>'
     """
     return "C {}".format(text.replace("_", " "))
+
+
+@app.route(f"/python/", defaults={"text": "is so cool"})
+@app.route(f"/python/<text>")
+def python(text):
+    """Root route that returns 'Python <text>! or Python is so cool'
+
+    Returns:
+        str: returns 'Python <text>! or Python is so cool'
+    """
+    return "Python {}".format(text.replace("_", " "))
+
+
+@app.route(f"/number/<int:n>")
+def number(n):
+    """Root route that returns 'C <text>!'
+
+    Returns:
+        str: returns 'C <text>'
+    """
+    return f"{n} is a number"
 
 
 if __name__ == "__main__":
