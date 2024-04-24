@@ -32,13 +32,15 @@ class Place(BaseModel, Base):
     amenity_ids = []
     reviews = relationship('Review', backref="place", cascade="delete")
     amenities = relationship(
-        'Amenity', secondary='place_amenity', viewonly=False, back_populates="place_amenities")
+        'Amenity', secondary='place_amenity',
+        viewonly=False, back_populates="place_amenities")
 
     if os.getenv("HBNB_TYPE_STORAGE") != "db":
         @property
         def get_reviews(self):
             from models.__init__ import storage
-            return [review for review in storage.all(Review).values() if review.place_id == self.id]
+            return [review for review in storage.all(Review).values()
+                    if review.place_id == self.id]
 
         @property
         def custom_amenities(self):
