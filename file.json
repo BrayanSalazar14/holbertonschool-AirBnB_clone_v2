@@ -1,129 +1,40 @@
 {
-    "State.b4aed08b-8370-45c1-85a0-721b6eaa28e9": {
-        "id": "b4aed08b-8370-45c1-85a0-721b6eaa28e9",
-        "created_at": "2024-04-10T12:18:55.918457",
-        "updated_at": "2024-04-10T12:18:55.918460",
-        "name": "Nevada",
+    "State.a26b07bb-d6c6-44e2-99e2-66632e8def45": {
+        "name": "California",
+        "id": "a26b07bb-d6c6-44e2-99e2-66632e8def45",
+        "created_at": "2024-04-23T12:27:04.346170",
+        "updated_at": "2024-04-23T12:27:04.346562",
         "__class__": "State"
     },
-    "State.6e26997b-4854-405d-8163-0c286ddb95a6": {
-        "id": "6e26997b-4854-405d-8163-0c286ddb95a6",
-        "created_at": "2024-04-10T12:45:44.576737",
-        "updated_at": "2024-04-10T12:45:44.576742",
-        "name": "Nevada",
+    "State.f2f77601-c023-4121-843d-adf0d99a11a8": {
+        "name": "Arizona",
+        "id": "f2f77601-c023-4121-843d-adf0d99a11a8",
+        "created_at": "2024-04-23T12:27:04.346935",
+        "updated_at": "2024-04-23T12:27:04.347016",
         "__class__": "State"
     },
-    "State.8a5ef5c3-e690-40cd-ab41-35e16f44b207": {
-        "id": "8a5ef5c3-e690-40cd-ab41-35e16f44b207",
-        "created_at": "2024-04-12T10:00:22.747395",
-        "updated_at": "2024-04-12T10:00:22.747408",
-        "name": "Brayan",
-        "__class__": "State"
+    "City.d45c44be-146d-4e3a-8d4b-c47e63a1e34c": {
+        "state_id": "a26b07bb-d6c6-44e2-99e2-66632e8def45",
+        "name": "Napa",
+        "id": "d45c44be-146d-4e3a-8d4b-c47e63a1e34c",
+        "created_at": "2024-04-23T12:27:04.347443",
+        "updated_at": "2024-04-23T12:27:04.347551",
+        "__class__": "City"
     },
-    "State.35f57d90-3d16-45c7-8213-ec7f39335474": {
-        "id": "35f57d90-3d16-45c7-8213-ec7f39335474",
-        "created_at": "2024-04-12T12:04:56.917462",
-        "updated_at": "2024-04-12T12:04:56.917469",
-        "name": "Nevada",
-        "__class__": "State"
+    "City.bd8ae7bf-1bd9-4b62-ad70-7210e6fbb4ef": {
+        "state_id": "a26b07bb-d6c6-44e2-99e2-66632e8def45",
+        "name": "Sonoma",
+        "id": "bd8ae7bf-1bd9-4b62-ad70-7210e6fbb4ef",
+        "created_at": "2024-04-23T12:27:04.348518",
+        "updated_at": "2024-04-23T12:27:04.348612",
+        "__class__": "City"
     },
-    "State.45934b66-b507-4e9e-b4da-c2d3c70bb90d": {
-        "id": "45934b66-b507-4e9e-b4da-c2d3c70bb90d",
-        "created_at": "2024-04-12T12:05:09.538651",
-        "updated_at": "2024-04-12T12:05:09.538660",
-        "name": "Nevada",
-        "__class__": "State"
-    },
-    "State.13c53d1d-4cb9-45d8-bfb4-489ac33e67e3": {
-        "id": "13c53d1d-4cb9-45d8-bfb4-489ac33e67e3",
-        "created_at": "2024-04-12T12:05:10.604251",
-        "updated_at": "2024-04-12T12:05:10.604260",
-        "name": "Nevada",
-        "__class__": "State"
-    },
-    "User.b05ae832-9636-4e5d-96c6-9f7d15ad962e": {
-        "name": "Brayan",
-        "id": "b05ae832-9636-4e5d-96c6-9f7d15ad962e",
-        "created_at": "2024-04-12T14:28:08.030149",
-        "updated_at": "2024-04-12T14:28:08.031253",
-        "__class__": "User"
-    },
-    "Place.6eee9d3b-8a9d-472f-b157-727a44ff1d30": {
-        "id": "6eee9d3b-8a9d-472f-b157-727a44ff1d30",
-        "created_at": "2024-04-12T19:03:24.432834",
-        "updated_at": "2024-04-12T19:03:24.433944",
-        "city_id": "0001",
-        "user_id": "0001",
-        "name": "My little house",
-        "number_rooms": 4,
-        "number_bathrooms": 2,
-        "max_guest": 10,
-        "price_by_night": 300,
-        "latitude": 37.773972,
-        "longitude": -122.431297,
-        "__class__": "Place"
-    },
-    "Place.0a7eaf46-3bd8-4b43-bdc8-7df1563a68fe": {
-        "id": "0a7eaf46-3bd8-4b43-bdc8-7df1563a68fe",
-        "created_at": "2024-04-12T19:04:13.207819",
-        "updated_at": "2024-04-12T19:04:13.208737",
-        "city_id": "0001",
-        "user_id": "0001",
-        "name": "My little house",
-        "number_rooms": 4,
-        "number_bathrooms": 2,
-        "max_guest": 10,
-        "price_by_night": 300,
-        "latitude": 37.773972,
-        "longitude": -122.431297,
-        "__class__": "Place"
-    },
-    "Amenity.37b67ae5-4eb4-4251-848b-9317aefe542c": {
-        "id": "37b67ae5-4eb4-4251-848b-9317aefe542c",
-        "created_at": "2024-04-13T00:24:54.916084",
-        "updated_at": "2024-04-13T00:24:54.917234",
-        "name": "Brayan",
-        "__class__": "Amenity"
-    },
-    "Place.7e0d7752-f7bd-4fdb-880c-d98aa4fb8a0d": {
-        "place_id": "ID EXISE PLACE",
-        "amenity_id": "ID EXISTENTE DE AMENITY",
-        "id": "7e0d7752-f7bd-4fdb-880c-d98aa4fb8a0d",
-        "created_at": "2024-04-13T01:58:11.417935",
-        "updated_at": "2024-04-13T01:58:11.420173",
-        "__class__": "Place"
-    },
-    "Place.61a562e6-0cf9-4dc8-bb53-6923fdee5558": {
-        "place_id": "44642c8c-977b-4d9d-920e-6875b2948a46",
-        "amenity_id": "c723618f-8e71-4a73-8f9c-904adfea0430",
-        "id": "61a562e6-0cf9-4dc8-bb53-6923fdee5558",
-        "created_at": "2024-04-13T01:59:47.670402",
-        "updated_at": "2024-04-13T01:59:47.671679",
-        "__class__": "Place"
-    },
-    "Place.bcb04e32-455e-46b8-8618-c3160bec9ff3": {
-        "id": "bcb04e32-455e-46b8-8618-c3160bec9ff3",
-        "created_at": "2024-04-16T11:07:30.709215",
-        "updated_at": "2024-04-16T11:07:30.710160",
-        "__class__": "Place"
-    },
-    "Place.a8736ab2-1dde-4258-bcc8-a3b1a0576a56": {
-        "id": "a8736ab2-1dde-4258-bcc8-a3b1a0576a56",
-        "created_at": "2024-04-16T11:09:26.187002",
-        "updated_at": "2024-04-16T11:09:26.188743",
-        "name": "Bra",
-        "__class__": "Place"
-    },
-    "Amenity.2756db98-160d-4c17-b99f-b19104203b2a": {
-        "id": "2756db98-160d-4c17-b99f-b19104203b2a",
-        "created_at": "2024-04-17T11:20:38.483717",
-        "updated_at": "2024-04-17T11:20:38.485290",
-        "__class__": "Amenity"
-    },
-    "Place.2756db98-160d-4c17-b99f-b19104203b2a": {
-        "id": "2756db98-160d-4c17-b99f-b19104203b2a",
-        "created_at": "2024-04-17T11:21:14.247388",
-        "updated_at": "2024-04-17T11:21:14.248193",
-        "__class__": "Place"
+    "City.99f71cf6-7917-4e47-af2f-6b46000ec162": {
+        "state_id": "f2f77601-c023-4121-843d-adf0d99a11a8",
+        "name": "Page",
+        "id": "99f71cf6-7917-4e47-af2f-6b46000ec162",
+        "created_at": "2024-04-23T12:27:04.349307",
+        "updated_at": "2024-04-23T12:27:04.349404",
+        "__class__": "City"
     }
 }
