@@ -28,7 +28,7 @@ def hbnb():
     return "HBNB"
 
 
-@app.route(f"/c/<text>")
+@app.route("/c/<text>")
 def cisfun(text):
     """Root route that returns 'C <text>!'
 
@@ -38,8 +38,8 @@ def cisfun(text):
     return "C {}".format(text.replace("_", " "))
 
 
-@app.route(f"/python/", defaults={"text": "is cool"})
-@app.route(f"/python/<text>")
+@app.route("/python/", defaults={"text": "is cool"})
+@app.route("/python/<text>")
 def python(text):
     """Root route that returns 'Python <text>! or Python is so cool'
 
