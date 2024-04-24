@@ -22,13 +22,14 @@ class DBStorage:
     __session = None
 
     def __init__(self):
-        mysql_user = os.getenv("HBNB_MYSQL_USER")
-        mysql_pass = os.getenv("HBNB_MYSQL_PWD")
-        mysql_host = os.getenv("HBNB_MYSQL_HOST", default='localhost')
-        mysql_db = os.getenv("HBNB_MYSQL_DB")
+        sql_usr = os.getenv("HBNB_MYSQL_USER")
+        sql_pass = os.getenv("HBNB_MYSQL_PWD")
+        sql_host = os.getenv("HBNB_MYSQL_HOST", default='localhost')
+        sql_db = os.getenv("HBNB_MYSQL_DB")
 
         self.__engine = create_engine(
-            f"mysql+mysqldb://{mysql_user}:{mysql_pass}@{mysql_host}/{mysql_db}", pool_pre_ping=True)
+            f"mysql+mysqldb://{sql_usr}:{sql_pass}@{sql_host}/{sql_db}",
+            pool_pre_ping=True)
 
         if os.getenv("HBNB_ENV") == "test":
             Base.metadata.drop_all(self.__engine)
@@ -54,7 +55,7 @@ class DBStorage:
         self.__session.commit()
 
     def delete(self, obj=None):
-        if obj != None:
+        if obj is not None:
             self.__session.delete(obj)
 
     def reload(self):
