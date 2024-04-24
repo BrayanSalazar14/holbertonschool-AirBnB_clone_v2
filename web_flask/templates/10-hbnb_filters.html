@@ -27,29 +27,23 @@
                     <li>
                         <h2>{{state.name}}</h2>
                     </li>
-                    <ul>
+                    <ul class="cities">
                         {% for city in cities %}
                         {% if city.state_id == state.id %}
                         <li>{{city.name}}</li>
+                        {% endif %}
+                        {% endfor %}
                     </ul>
+                    {% endfor %}
                 </ul>
             </div>
-            <div class="amenities">
+            <div class="filter_amenities">
                 <h3>Amenities</h3>
                 <h4>&nbsp;</h4>
                 <ul class="popover">
-                    <li>
-                        <h4>&nbsp;</h4>
-                    </li>
-                    <li>
-                        <h4>&nbsp;</h4>
-                    </li>
-                    <li>
-                        <h4>&nbsp;</h4>
-                    </li>
-                    <li>
-                        <h4>&nbsp;</h4>
-                    </li>
+                    {% for amenity in amenities %}
+                    <li class="amenities">{{amenity.name}}</li>
+                    {% endfor %}
                 </ul>
             </div>
 

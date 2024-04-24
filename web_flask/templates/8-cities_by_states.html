@@ -11,11 +11,11 @@
         {% for state in states %}
         <LI>{{ state.id }}: <B>{{ state.name }}</B></LI>
         <UL>
-            {% for city in cities %}
+            {% for city in cities -%}
             {% if city.state_id == state.id %}
             <LI>{{ city.id }}: <B>{{ city.name }}</B></LI>
             {% endif %}
-            {% endfor %}
+            {%- endfor %}
         </UL>
         {% endfor %}
     </UL>
