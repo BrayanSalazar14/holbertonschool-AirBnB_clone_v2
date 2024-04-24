@@ -2,9 +2,7 @@
 """
 5th task file with a Flask app
 """
-from flask import Flask
-from markupsafe import escape
-from flask import render_template
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
