@@ -1,26 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<HTML lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<HEAD>
+    <TITLE>Document</TITLE>
+</HEAD>
 
-<body>
-    <h1>States</h1>
-    <ul>
+<BODY>
+    <H1>States</H1>
+    <UL>
         {% for state in states %}
-        <li>{{ state.id }}: <b>{{ state.name }}</b></li>
-        <ul>
+        <LI>{{ state.id }}: <B>{{ state.name }}</B></LI>
+        <UL>
             {% for city in cities %}
             {% if city.state_id == state.id %}
-            <li>{{ city.id }}: <b>{{ city.name }}</b></li>
+            <LI>{{ city.id }}: <B>{{ city.name }}</B></LI>
             {% endif %}
             {% endfor %}
-        </ul>
+        </UL>
         {% endfor %}
-    </ul>
-</body>
+    </UL>
+</BODY>
 
-</html>
+</HTML>
