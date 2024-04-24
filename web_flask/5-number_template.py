@@ -39,7 +39,7 @@ def cisfun(text):
     return "C {}".format(text.replace("_", " "))
 
 
-@app.route(f"/python/", defaults={"text": "is so cool"})
+@app.route(f"/python/", defaults={"text": "is cool"})
 @app.route(f"/python/<text>")
 def python(text):
     """Root route that returns 'Python <text>! or Python is so cool'
