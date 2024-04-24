@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    {% if value_id in list_id %}
+    {% for instance in states %}
+    {% if instance.id == value_id %}
+    <h1>State: {{instance.name}}</h1>
+    <h3>Cities:</h3>
+    <ul>
+        {% for city in cities %}
+        {% if city.state_id == instance.id %}
+        <li>{{ city.id }}: <b>{{ city.name }}</b></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endfor %}
+    {% else %}
+    <h1>Not found!</h1>
+    {% endif %}
+
+    {% if value_id == None %}
+    <h1>States</h1>
+    <ul>
+        {% for state in states %}
+        <li>{{ state.id }}: <b>{{ state.name }}</b></li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</body>
+
+</html>

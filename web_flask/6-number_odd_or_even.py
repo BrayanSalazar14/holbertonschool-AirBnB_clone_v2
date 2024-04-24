@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-5th task file with a Flask app
+6th task file with a Flask app
 """
 from flask import Flask
 from markupsafe import escape
@@ -68,6 +68,16 @@ def number_template(n):
         str: returns '<H1> tag and number'
     """
     return render_template('5-number.html', n=n)
+
+
+@app.route(f"/number_odd_or_even/<int:n>")
+def odd_even_number(n):
+    """Root route that returns '<H1> tag and number! if number odd or even'
+
+    Returns:
+        str: returns '<H1> tag and number! if number odd or even'
+    """
+    return render_template('6-number_odd_or_even.html', n=n)
 
 
 if __name__ == "__main__":

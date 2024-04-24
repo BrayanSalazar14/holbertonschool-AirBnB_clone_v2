@@ -6,6 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Number: {{n}}</h1>
+    <h1>States</h1>
+    <ul>
+        {% for name in states %}
+        <li>{{name.id}}: <B>{{name.name}}</B></li>
+        {%- endfor %}
+    </ul>
 </body>
 </html>
