@@ -6,6 +6,7 @@
 </HEAD>
 
 <BODY>
+    {% if value_id != None %}
     {% if value_id in list_id %}
     {% for state in states %}
     {%- if state.id == value_id -%}
@@ -23,8 +24,7 @@
     {% else %}
     <H1>Not found!</H1>
     {% endif %}
-
-    {%if value_id == None %}
+    {% else %}
     <H1>States</H1>
     <UL>
         {% for state in states %}
